@@ -1,0 +1,15 @@
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\obj\Debug\Prueba.Codifico.DAL.csproj.AssemblyReference.cache
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\obj\Debug\Prueba.Codifico.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\Prueba.Codifico.DAL.dll.config
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\Prueba.Codifico.DAL.dll
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\Prueba.Codifico.DAL.pdb
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\Prueba.Codifico.ENL.dll
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\Prueba.Codifico.ENL.pdb
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\Prueba.Codifico.ENL.dll.config
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\obj\Debug\Prueba.C.F43E4F06.Up2Date
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\obj\Debug\Prueba.Codifico.DAL.dll
+C:\Users\Daniel\source\repos\Prueba_Codifico\BackEnd\Prueba.Codifico.API\Prueba.Codifico.DAL\obj\Debug\Prueba.Codifico.DAL.pdb

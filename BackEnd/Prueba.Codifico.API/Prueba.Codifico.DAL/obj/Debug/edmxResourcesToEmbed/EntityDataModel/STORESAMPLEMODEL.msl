@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StoreSampleModelStoreContainer" CdmEntityContainer="StoreSampleEntities">
+    <EntitySetMapping Name="vw_Employes">
+      <EntityTypeMapping TypeName="StoreSampleModel.vw_Employes">
+        <MappingFragment StoreEntitySet="vw_Employes">
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Empid" ColumnName="Empid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Products">
+      <EntityTypeMapping TypeName="StoreSampleModel.vw_Products">
+        <MappingFragment StoreEntitySet="vw_Products">
+          <ScalarProperty Name="Productname" ColumnName="Productname" />
+          <ScalarProperty Name="Productid" ColumnName="Productid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SalesDatePrediction">
+      <EntityTypeMapping TypeName="StoreSampleModel.vw_SalesDatePrediction">
+        <MappingFragment StoreEntitySet="vw_SalesDatePrediction">
+          <ScalarProperty Name="NextPredictedOrder" ColumnName="NextPredictedOrder" />
+          <ScalarProperty Name="LastOrderDate" ColumnName="LastOrderDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Shippers">
+      <EntityTypeMapping TypeName="StoreSampleModel.vw_Shippers">
+        <MappingFragment StoreEntitySet="vw_Shippers">
+          <ScalarProperty Name="Companyname" ColumnName="Companyname" />
+          <ScalarProperty Name="Shipperid" ColumnName="Shipperid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_OrderClients">
+      <EntityTypeMapping TypeName="StoreSampleModel.vw_OrderClients">
+        <MappingFragment StoreEntitySet="vw_OrderClients">
+          <ScalarProperty Name="Shipcity" ColumnName="Shipcity" />
+          <ScalarProperty Name="Shipaddress" ColumnName="Shipaddress" />
+          <ScalarProperty Name="Shipname" ColumnName="Shipname" />
+          <ScalarProperty Name="Shippeddate" ColumnName="Shippeddate" />
+          <ScalarProperty Name="Requireddate" ColumnName="Requireddate" />
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+          <ScalarProperty Name="Orderid" ColumnName="Orderid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_AddNewOrder" FunctionName="StoreSampleModel.Store.sp_AddNewOrder" />
+  </EntityContainerMapping>
+</Mapping>

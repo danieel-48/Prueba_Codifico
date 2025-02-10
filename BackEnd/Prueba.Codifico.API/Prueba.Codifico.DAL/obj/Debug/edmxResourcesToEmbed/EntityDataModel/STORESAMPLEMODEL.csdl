@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StoreSampleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="StoreSampleEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vw_Employes" EntityType="StoreSampleModel.vw_Employes" />
+    <EntitySet Name="vw_Products" EntityType="StoreSampleModel.vw_Products" />
+    <EntitySet Name="vw_SalesDatePrediction" EntityType="StoreSampleModel.vw_SalesDatePrediction" />
+    <EntitySet Name="vw_Shippers" EntityType="StoreSampleModel.vw_Shippers" />
+    <EntitySet Name="vw_OrderClients" EntityType="StoreSampleModel.vw_OrderClients" />
+    <FunctionImport Name="sp_AddNewOrder">
+      <Parameter Name="Empid" Mode="In" Type="Int32" />
+      <Parameter Name="Shipperid" Mode="In" Type="Int32" />
+      <Parameter Name="Shipname" Mode="In" Type="String" />
+      <Parameter Name="Shipaddress" Mode="In" Type="String" />
+      <Parameter Name="Shipcity" Mode="In" Type="String" />
+      <Parameter Name="Orderdate" Mode="In" Type="DateTime" />
+      <Parameter Name="Requireddate" Mode="In" Type="DateTime" />
+      <Parameter Name="Shippeddate" Mode="In" Type="DateTime" />
+      <Parameter Name="Freight" Mode="In" Type="Decimal" />
+      <Parameter Name="Shipcountry" Mode="In" Type="String" />
+      <Parameter Name="Productid" Mode="In" Type="Int32" />
+      <Parameter Name="Unitprice" Mode="In" Type="Decimal" />
+      <Parameter Name="Qty" Mode="In" Type="Int16" />
+      <Parameter Name="discount" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="vw_Employes">
+    <Key>
+      <PropertyRef Name="Empid" />
+      <PropertyRef Name="FullName" />
+    </Key>
+    <Property Name="Empid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" Nullable="false" MaxLength="31" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_Products">
+    <Key>
+      <PropertyRef Name="Productid" />
+      <PropertyRef Name="Productname" />
+    </Key>
+    <Property Name="Productid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Productname" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_SalesDatePrediction">
+    <Key>
+      <PropertyRef Name="custid" />
+      <PropertyRef Name="CustomerName" />
+    </Key>
+    <Property Name="custid" Type="Int32" Nullable="false" />
+    <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="LastOrderDate" Type="DateTime" Precision="3" />
+    <Property Name="NextPredictedOrder" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vw_Shippers">
+    <Key>
+      <PropertyRef Name="Shipperid" />
+      <PropertyRef Name="Companyname" />
+    </Key>
+    <Property Name="Shipperid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Companyname" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_OrderClients">
+    <Key>
+      <PropertyRef Name="Orderid" />
+      <PropertyRef Name="Requireddate" />
+      <PropertyRef Name="Shipname" />
+      <PropertyRef Name="Shipaddress" />
+      <PropertyRef Name="Shipcity" />
+    </Key>
+    <Property Name="Orderid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustId" Type="Int32" />
+    <Property Name="Requireddate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Shippeddate" Type="DateTime" Precision="3" />
+    <Property Name="Shipname" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Shipaddress" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Shipcity" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
